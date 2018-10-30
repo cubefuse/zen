@@ -1,0 +1,7 @@
+{
+  "appId": "org.cubefuse.zen",
+  "appName": "Cubefuse Zen",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
+}

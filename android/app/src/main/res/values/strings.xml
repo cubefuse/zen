@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cubefuse Zen</string>
+    <string name="title_activity_main">Cubefuse Zen</string>
+    <string name="package_name">org.cubefuse.zen</string>
+    <string name="fileprovider_authority">org.cubefuse.zen.fileprovider</string>
+    <string name="custom_url_scheme">org.cubefuse.zen</string>
+</resources>
