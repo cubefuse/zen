@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <d-card style="max-width: 300px">
+      <d-card-header>Card header</d-card-header>
+      <d-card-img src="https://place-hold.it/300x200"/>
+      <d-card-body title="Lorem Ipsum">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <d-btn theme="primary">Read more &rarr;</d-btn>
+      </d-card-body>
+      <d-card-footer>Card footer</d-card-footer>
+    </d-card>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld
-  }
-})
+@Component
 export default class Home extends Vue {}
 </script>
