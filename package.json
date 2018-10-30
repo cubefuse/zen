@@ -1,7 +1,10 @@
 {
-  "name": "zen",
+  "name": "cubefuse-zen",
+  "description": "The Open-Source 2-Factor Authentication (2FA) App",
   "version": "0.1.0",
-  "private": true,
+  "author": "Cubefuse Open Source <hi@cubefuse.org>",
+  "license": "MIT",
+  "repository": "https://github.com/cubefuse/zen",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && cap copy",
