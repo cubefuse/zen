@@ -12,16 +12,6 @@
 </style>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import NavBar from "./components/NavBar.vue";
-import TileGrid from "./views/TileGrid.vue";
-import TokenView from "./views/TokenView.vue";
-
-@Component({
-  components: {
-    TokenView,
-    TileGrid,
-    NavBar
-  }
-})
+@Component
 export default class App extends Vue {}
 </script>

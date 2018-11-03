@@ -8,8 +8,11 @@
                             <img :src="iconUrl" />
                         </div>
                     </div>
-                    <div class="level-item has-text-centered level-left">
-                        <p class="subtitle">{{name}}</p>
+                    <div class="level-item level-left">
+                        <div>
+                            <h2 class="has-text-weight-semibold">{{name}}</h2>
+                            <h3>{{info}}</h3>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -24,6 +27,9 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 export default class Tile extends Vue {
   @Prop()
   name!: string;
+
+  @Prop()
+  info!: string;
 
   @Prop()
   iconUrl!: string;

@@ -1,18 +1,19 @@
 <template>
-    <nav class="navbar is-transparent">
-        <div class="container">
+    <nav :class="['navbar is-fixed-top is-transparent ', 'is-' + color]"  role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item">
+                <router-link to="/" class="navbar-item">
                     <h1>Cubefuse <strong class="is-uppercase">Zen</strong> Authenticator</h1>
-                </a>
-            </div>
+                </router-link>
         </div>
     </nav>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
-export default class NavBar extends Vue {}
+export default class NavBar extends Vue {
+  @Prop({ default: "white" })
+  color!: string;
+}
 </script>
