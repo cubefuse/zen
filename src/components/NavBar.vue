@@ -1,5 +1,13 @@
 <template>
-    <h1>Test</h1>
+    <nav class="navbar is-transparent">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <h1>Cubefuse <strong class="is-uppercase">Zen</strong> Authenticator</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
 </template>
 
 <script lang="ts">
