@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -10,23 +9,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import NavBar from "./components/NavBar.vue";
+import TileGrid from "./views/TileGrid.vue";
+import TokenView from "./views/TokenView.vue";
 
 @Component({
   components: {
+    TokenView,
+    TileGrid,
     NavBar
   }
 })
